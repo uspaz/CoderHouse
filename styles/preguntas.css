@@ -1,0 +1,151 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root{ /*Variables para los colores*/
+  --main-color: #faf9f9;
+  --second-color: #0a9396;
+  --third-color: #0a0908;
+}
+.header{ /* Comienzo del header */
+  height: 560px;
+  width: 100%;
+  display: flex;
+}
+.header__nav{ /* Comienzo del nav */
+  height: 60px;
+  width: 100%;
+  background: var(--third-color);
+  position: fixed;
+  z-index: 1;
+}
+.nav__ul{
+  list-style: none;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav__li{
+  padding: 20px;
+}
+.nav__li > a{
+  text-decoration: none;
+  color: #fff;
+} /* Fin del nav */
+.header__logo{/* Comienzo del logo */
+  height: 50px;
+  width: 60px;
+  display: flex;
+  color: #fff;
+  margin-left: 2.875em; /* 30/16 */
+  margin-top: 0.4em; /* 5/16 */
+  z-index: 2;
+  position: fixed;
+}
+.header__logo > img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.Logo__text{
+  margin-left: 15px;
+  font-size: 20px;
+  align-self: center;
+  color: var(--main-color);
+}/* Fin del logo */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{ /* Comienzo del footer */
+  height: 300px;
+  width: 100%;
+  background: var(--third-color);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 80% 20%;
+  font-family: 'Roboto Mono', monospace;
+}
+.footer__redes{
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  height: 250px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.footer__map{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__redes iframe{
+  height: 200px;
+  width: 600px;
+}
+.redes__link{
+  position: relative;
+}
+.redes__link p:nth-child(1){
+  position: absolute;
+  left: 5.7rem;
+  top: 1rem;
+  font-size: 18px;
+  color: var(--main-color);
+}
+.redes__link a{
+  position: relative;
+  left: 1.5rem;
+  top: 4rem;
+  text-decoration: none;
+}
+.redes__link p:nth-child(6){
+  position: absolute;
+  left: 2.5rem;
+  top: 8rem;
+  font-size: 15px;
+  color: var(--main-color);
+}
+.redes__link a i{
+  font-size: 30px;
+  color: var(--main-color);
+  margin-left: 30px;
+}
+#facebook:hover{
+  color: #6e8ccc;
+}
+#google:hover{
+  color: #ee4b39;
+}
+#instagram:hover{
+  color: #e4405f ;
+}
+#twitter:hover{
+  color: #0077b5;
+}
+.footer__extra{
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  height: 50px;
+  width: 100%;
+  color: var(--main-color);
+  order: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.footer__extra span{
+  margin-bottom: 15px;
+  font-size: 15px;
+} /* Fin del footer */
