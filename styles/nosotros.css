@@ -14,13 +14,13 @@
   --main-background: radial-gradient( circle 900px at 50.1% 48%,  rgba(50,57,63,1) 0.2%, rgba(33,37,41,1) 90% );
   --second-background: radial-gradient( circle 937px at 49.3% 48.5%,  rgba(5,120,193,1) 0%, rgba(3,28,105,1) 90.1% );
 }
-/* body::-webkit-scrollbar{
+ body::-webkit-scrollbar{
   width: 10px;
 }
 body::-webkit-scrollbar-thumb{
   background-color: #e85d04;
   border-radius: 10px;
-} */
+}
 .header{
   height: 540px;
   width: 100%;
