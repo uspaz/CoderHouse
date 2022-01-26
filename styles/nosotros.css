@@ -286,6 +286,9 @@ body::-webkit-scrollbar-thumb{
   .history__text{
     font-size: 20px;
   }
+  .footer__extra{
+    justify-content: center
+  }
 }
 @media only screen and (min-width: 769px) and (max-width: 1059px){
   .nav__li{
