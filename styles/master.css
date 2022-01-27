@@ -10,7 +10,7 @@
   --main-font: 'Raleway', sans-serif;
   --second-font: 'Luxurious Roman', cursive;
   --third-font: 'Be Vietnam Pro', sans-serif;
-  --fourth--font: 'Roboto Mono', monospace;
+  --fourth-font: 'Roboto Mono', monospace;
   --main-background: radial-gradient( circle 900px at 50.1% 48%,  rgba(50,57,63,1) 0.2%, rgba(33,37,41,1) 90% );
 }
 body::-webkit-scrollbar{
@@ -25,12 +25,16 @@ body::-webkit-scrollbar-thumb{
   width: 100%;
   display: flex;
 }
-.header__nav{ /* Comienzo del nav */
+/* Comienzo del nav */
+.header__nav{
   height: 60px;
   width: 100%;
   background: var(--third-color);
   position: fixed;
   z-index: 1;
+}
+.header__nav input, .checkbtn{
+  display: none;
 }
 .nav__ul{
   height: 100%;
@@ -46,9 +50,10 @@ body::-webkit-scrollbar-thumb{
 .nav__li > a{
   text-decoration: none;
   color: #fff;
-} /* Fin del nav */
+}/* Fin del nav */
 
-.header__logo{ /* Comienzo del logo */
+/* Comienzo del logo */
+.header__logo{
   height: 50px;
   width: 60px;
   display: flex;
@@ -348,7 +353,7 @@ body::-webkit-scrollbar-thumb{
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-family: var(--fourth--font);
+  font-family: var(--fourth-font);
 }
 .card__img{
   background: var(--main-color);
@@ -385,7 +390,7 @@ body::-webkit-scrollbar-thumb{
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 80% 20%;
-  font-family:  var(--fourth--font);
+  font-family:  var(--fourth-font);
 }
 .footer__redes{
   grid-column: 1 / 3;
@@ -767,6 +772,40 @@ body::-webkit-scrollbar-thumb{
 @media only screen and (min-width: 480px) and (max-width: 768px){
   .header{
     height: 740px;
+  }
+  .checkbtn{
+    display: block;
+    font-size: 40px;
+    color: var(--main-color);
+    float: right;
+    margin: 10px 30px;
+    cursor: pointer;
+  }
+  #check{
+    display: none;
+  }
+  .nav__ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .nav__li > a{
+    font-size: 25px;
+    display: block;
+    line-height: 80px;
+  }
+  .nav__li > a:hover{
+    color: #0082e6;
+  }
+  #check:checked ~ .nav__ul{
+    left: 0;
   }
   .header__start{
     height: 680px;
