@@ -19,6 +19,8 @@
       <img src="../img/logo.png" alt="Logo" loading="lazy">
       <p class="Logo__text">CENTRO Ganesha</p>
     </section>
+    <input type="checkbox" value="" id="check">
+    <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
     <ul class="nav__ul">
       <li class="nav__li"><a href="../index.html">Inicio</a></li>
       <li class="nav__li"><a href="nosotros.html">Nosotros</a></li>
@@ -28,39 +30,44 @@
     </ul>
   </nav>
 </header>
-<main>
-  <h1>Formulario de contacto</h1>
-  <article class="">
-    <form class="" action="index.html" method="post">
-      <label for="">Nombre completo:</label>
-      <input type="text" name="" value="">
-      <label for="">Correo:</label>
-      <input type="text" name="" value="">
-      <textarea name="name" rows="8" cols="80" placeholder="Introduzca aquí su comentario..."></textarea>
-    </form>
-  </article>
-  <aside class="">
-    <div class="">
-      <img src="" alt="Foto">
-      <p>Lorem ipsum dolor</p>
-      <p>Lorem ipsum dolor</p>
-    </div>
-    <div class="">
-      <img src="" alt="Foto">
-      <p>Lorem ipsum dolor</p>
-      <p>Lorem ipsum dolor</p>
-    </div>
-    <div class="">
-      <img src="" alt="Foto">
-      <p>Lorem ipsum dolor</p>
-      <p>Lorem ipsum dolor</p>
-    </div>
-    <div class="">
-      <img src="" alt="Foto">
-      <p>Lorem ipsum dolor</p>
-      <p>Lorem ipsum dolor</p>
-    </div>
-  </aside>
+<main class="main">
+  <section class="section__main">
+    <article class="main__article">
+      <h1 class="main__title">Formulario de contacto</h1>
+      <form class="article__form" action="index.html" method="post">
+        <div class="form__name">
+          <label for="name">Nombre completo:</label>
+          <input class="form__input" type="text" name="name" placeholder="Nombre Completo" value="">
+        </div>
+        <div class="form__email">
+          <label for="email">Correo:</label>
+          <input class="form__input" type="email" name="email" placeholder="Correo electronico" value="">
+        </div>
+        <div class="form__number">
+          <label for="phone">Teléfono</label>
+          <input class="form__input" type="number" name="phone" placeholder="Número de teléfono" value="">
+        </div>
+        <div class="form__comment">
+          <textarea name="name" rows="8" cols="80" placeholder="Introduzca aquí su comentario..."></textarea>
+        </div>
+        <button type="submit" name="button" class="article__btn">Enviar<i class="fas fa-paper-plane"></i></button>
+      </form>
+    </article>
+    <aside class="main__aside">
+      <div class="aside__content">
+        <img src="../img/Fabiana-Sasalez.jpg" alt="Foto">
+        <p class="aside__text">Fabiana Sasalez</p>
+        <p class="aside__text">sasalezfabiana@gmail.com</p>
+        <p class="aside__text">+598 099 517 794</p>
+      </div>
+      <div class="aside__content">
+        <img src="../img/Matias-Teijeiro.jpeg" alt="Foto">
+        <p class="aside__text">Matias Teijeiro</p>
+        <p class="aside__text">matiasteijeiro2003@gmail.com</p>
+        <p class="aside__text">+598 092 838 838</p>
+      </div>
+    </aside>
+  </section>
 </main>
 <footer class="footer" data-aos="fade-up">
   <div class="footer__redes">
