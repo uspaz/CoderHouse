@@ -50,6 +50,9 @@ body::-webkit-scrollbar-thumb{
 .nav__li > a{
   text-decoration: none;
   color: #fff;
+}
+.nav__li > a:hover{
+  color: #0082e6;
 }/* Fin del nav */
 
 /* Comienzo del logo */
@@ -355,6 +358,9 @@ body::-webkit-scrollbar-thumb{
   flex-direction: column;
   font-family: var(--fourth-font);
 }
+.card:hover{
+  transform: scale(1.05);
+}
 .card__img{
   background: var(--main-color);
   height: 100px;
@@ -428,6 +434,7 @@ body::-webkit-scrollbar-thumb{
 .redes__link a{
   width: 6.25em; /* 100/16 */
   text-decoration: none;
+  transition: .5s;
   }
 .redes__link p:nth-child(6){
   font-size: 16px;
@@ -440,6 +447,9 @@ body::-webkit-scrollbar-thumb{
   color: var(--main-color);
   display: flex;
   justify-content: space-around;
+}
+.redes__link a:hover{
+  transform: translateY(-10px);
 }
 #facebook{
   color: #6e8ccc;
@@ -478,7 +488,7 @@ body::-webkit-scrollbar-thumb{
     height: 70px;
   }
   .nav__li{
-    font-size: 1.1em;
+    font-size: 18px;
     padding: 0em 1.8em; /* 0/16 */ /* 50/16 */
   }
   .header__logo{
@@ -773,13 +783,38 @@ body::-webkit-scrollbar-thumb{
   .header{
     height: 740px;
   }
+  /* Menú Responsive */
   .checkbtn{
-    display: block;
-    font-size: 40px;
+    height: 50px;
+    width: 50px;
+    background: #37a6ff;
     color: var(--main-color);
     float: right;
-    margin: 10px 30px;
-    cursor: pointer;
+    margin: 5px 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+  }
+  .checkbtn::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    transition: .5s;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 0 #fff;
+  }
+  .checkbtn::after{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    transition: .5s;
+    transform: translateY(10px);
   }
   #check{
     display: none;
@@ -807,6 +842,17 @@ body::-webkit-scrollbar-thumb{
   #check:checked ~ .nav__ul{
     left: 0;
   }
+  #check:checked ~ .checkbtn{
+    background: #f7226a;
+  }
+  #check:checked ~ .checkbtn::before{
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 0 #fff;
+  }
+  #check:checked ~ .checkbtn::after{
+    transform: translateY(0px) rotate(-45deg);
+  }/* Fin del menú */
+
   .header__start{
     height: 680px;
     width: 100%;
@@ -999,6 +1045,76 @@ body::-webkit-scrollbar-thumb{
   .header{
     height: 740px;
   }
+  /* Menú Responsive */
+  .checkbtn{
+    height: 50px;
+    width: 50px;
+    background: #37a6ff;
+    color: var(--main-color);
+    float: right;
+    margin: 5px 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+  }
+  .checkbtn::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    transition: .5s;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 0 #fff;
+  }
+  .checkbtn::after{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    transition: .5s;
+    transform: translateY(10px);
+  }
+  #check{
+    display: none;
+  }
+  .nav__ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .nav__li > a{
+    font-size: 25px;
+    display: block;
+    line-height: 80px;
+  }
+  .nav__li > a:hover{
+    color: #0082e6;
+  }
+  #check:checked ~ .nav__ul{
+    left: 0;
+  }
+  #check:checked ~ .checkbtn{
+    background: #f7226a;
+  }
+  #check:checked ~ .checkbtn::before{
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 0 #fff;
+  }
+  #check:checked ~ .checkbtn::after{
+    transform: translateY(0px) rotate(-45deg);
+  }/* Fin del menú */
+
   .header__start{
     height: 680px;
     width: 100%;

@@ -34,13 +34,38 @@ body::-webkit-scrollbar-thumb{
   position: fixed;
   z-index: 1;
 }
+/* Menú Responsive */
 .checkbtn{
-  display: block;
-  font-size: 40px;
+  height: 50px;
+  width: 50px;
+  background: #37a6ff;
   color: var(--main-color);
   float: right;
-  margin: 10px 30px;
-  cursor: pointer;
+  margin: 5px 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+.checkbtn::before{
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  transition: .5s;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 0 #fff;
+}
+.checkbtn::after{
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  transition: .5s;
+  transform: translateY(10px);
 }
 #check{
   display: none;
@@ -54,7 +79,6 @@ body::-webkit-scrollbar-thumb{
   left: -100%;
   text-align: center;
   transition: all .5s;
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   list-style: none;
@@ -73,6 +97,16 @@ body::-webkit-scrollbar-thumb{
 #check:checked ~ .nav__ul{
   left: 0;
 }
+#check:checked ~ .checkbtn{
+  background: #f7226a;
+}
+#check:checked ~ .checkbtn::before{
+  transform: translateY(0px) rotate(45deg);
+  box-shadow: 0 0 0 #fff;
+}
+#check:checked ~ .checkbtn::after{
+  transform: translateY(0px) rotate(-45deg);
+}/* Fin del menú */
 /* Fin del nav */
 
 /* Comienzo del logo */
@@ -230,6 +264,7 @@ body::-webkit-scrollbar-thumb{
 .redes__link a{
   width: 6.25em; /* 100/16 */
   text-decoration: none;
+  transition: .5s;
 }
 .redes__link p:nth-child(6){
   font-size: 16px;
@@ -242,6 +277,9 @@ body::-webkit-scrollbar-thumb{
   color: var(--main-color);
   display: flex;
   justify-content: space-around;
+}
+.redes__link a:hover{
+  transform: translateY(-10px);
 }
 #facebook{
   color: #6e8ccc;
@@ -440,7 +478,7 @@ body::-webkit-scrollbar-thumb{
     font-size: 45px;
   }
   .main{
-    height: 2650px;
+    height: 2250px;
     width: 100%;
     background: none;
   }
@@ -467,7 +505,7 @@ body::-webkit-scrollbar-thumb{
     box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.95);
   }
   .section__history--s, .section__history--t, .section__history--c, .section__history--q{
-    height: 900px;
+    height: 700px;
     width: 45%;
     background-image: var(--main-background);
     justify-content: space-evenly;
@@ -477,7 +515,7 @@ body::-webkit-scrollbar-thumb{
     box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
   }
   .section__history--p{
-    width: 80%;
+    width: 65%;
     background-image: var(--main-background);
     justify-content: space-evenly;
     border-radius: 20px;
@@ -564,12 +602,12 @@ body::-webkit-scrollbar-thumb{
     background: none;
   }
   .nav__li{
-    padding: 0em 1.6em; /* 0/16 */ /* 50/16 */
+    padding: 0em 1.8em; /* 0/16 */ /* 50/16 */
   }
   .nav__li > a{
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
   }
   .header__logo{
     height: 60px;
