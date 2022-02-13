@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+// Reset Manual
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+  // Variables
+
+// Colors
+$main-color: #faf9f9;
+$second-color: #0a9396;
+$third-color: #0a0908;
+$fourth-color: #FFFFFF;
+$fifth-color: #37a6ff;
+$sixth-color: #2c3e50;
+$seventh-color: #000000;
+$eighth-color: #2286e6;
+$ninth-color: #48cae4;
+$tenth-color: #011627;
+$eleventh-color: #2EC4B6;
+$twelfth-color: #E71D36;
+$thirteenth-color: #3c096c;
+$fourteenth-color: #dee2e6;
+$fifteenth-color: #023e8a;
+$sixteenth-color: #0096c7;
+$seventeenth-color: #212529;
+$eighteenth-color: #00a896;
+$nineteenth-color: #264653;
+
+// Fonts
+$main-font: 'Raleway', sans-serif;
+$second-font: 'Luxurious Roman', cursive;
+$third-font: 'Be Vietnam Pro', sans-serif;
+$fourth-font: 'Roboto Mono', monospace;
+$fifth-font: 'Times New Roman';
+$sixth-font: 'Libre Baskerville', serif;
+
+// Background Gradients
+$main-bg: radial-gradient( circle 900px at 50.1% 48%,  rgba(50,57,63,1) 0.2%, rgba(33,37,41,1) 90% );
+$second-bg: radial-gradient( circle 937px at 49.3% 48.5%,  rgba(5,120,193,1) 0%, rgba(3,28,105,1) 90.1% );
+
+// Map redes
+$redes:(
+  facebook: #4267b2,
+  google: #ee4b39,
+  instagram: #e4405f,
+  twitter: #1da1f2
+);
+
+// Mixins
+// @mixin pensando{
+//
+// }
+
+// Scroll
+body{
+  &::-webkit-scrollbar{
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: #e85d04;
+    border-radius: 10px;
+  }
+}
