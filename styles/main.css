@@ -110,7 +110,7 @@ body::-webkit-scrollbar-thumb {
     height: 750px;
     width: 100%;
     margin-top: 60px;
-    background-image: url("../img/header-back.jpg");
+    background-image: url("../img/header-back.webp");
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -431,7 +431,7 @@ body::-webkit-scrollbar-thumb {
     width: 95%;
     margin: 100px auto 15px;
     border-radius: 10px;
-    font-size: 3em;
+    font-size: 2.2em;
     letter-spacing: 5px; }
   .main__we .main__section .first {
     width: 90%;
@@ -457,6 +457,8 @@ body::-webkit-scrollbar-thumb {
         height: 35em; } }
 
 @media only screen and (min-width: 1200px) {
+  .main__we .main__section .section__title {
+    font-size: 2.5em; }
   .main__we .main__section .first {
     width: 80%;
     margin: 0px auto; }
@@ -475,6 +477,8 @@ body::-webkit-scrollbar-thumb {
     font-size: 18px; } }
 
 @media only screen and (min-width: 1650px) {
+  .main__we .main__section .section__title {
+    font-size: 3em; }
   .main__we .main__section .first {
     width: 70%;
     margin: 0px auto; }
