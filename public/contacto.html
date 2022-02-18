@@ -8,95 +8,96 @@
   <link rel="apple-touch-icon" href="../img/logo.png">
   <meta name="description" content="Podras encontrar aquí una forma de enviarnos un correo con tu comentario sobre el asunto que desees y lo leeremos a la brevedad.">
   <meta name="keywords" content="reiki, ganesha, asunto, contacto, correo, centro, sanación">
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Bitter:wght@300;500&family=Luxurious+Roman&family=Raleway:wght@500&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/7db1b9fcb6.js" crossorigin="anonymous"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="../styles/main.css">
   <title>CENTRO Ganesha | Contacto - Estamos a tu disposición</title>
 </head>
 <body>
-<header class="header">
-  <nav class="header__nav">
-    <section class="header__logo">
-      <img src="../img/logo.png" alt="Logo" loading="lazy">
-      <p class="Logo__text">CENTRO Ganesha</p>
+  <!-- Logo - Nav -->
+  <header class="header">
+    <nav class="header__nav">
+      <section class="header__logo">
+        <img src="../img/logo.png" alt="Logo" loading="lazy">
+        <p class="Logo__text">CENTRO Ganesha</p>
+      </section>
+      <input type="checkbox" value="" id="check">
+      <label for="check" class="checkbtn"></label>
+      <ul class="nav__ul">
+        <li class="nav__li"><a href="../index.html">Inicio</a></li>
+        <li class="nav__li"><a href="nosotros.html">Nosotros</a></li>
+        <li class="nav__li"><a href="contacto.html">Contacto</a></li>
+        <li class="nav__li"><a href="preguntas.html">Preguntas</a></li>
+        <li class="nav__li"><a href="extra.html">Extra</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Contenido Principal -->
+  <main class="main__contact">
+    <section class="section__main">
+      <article class="main__article">
+        <h1 class="main__title">Formulario de contacto</h1>
+        <form class="article__form" action="index.html" method="post">
+          <div class="form">
+            <label for="name">Nombre completo:</label>
+            <input class="form__input" type="text" name="name" placeholder="Escriba su nombre..." value="">
+          </div>
+          <div class="form">
+            <label for="email">Correo:</label>
+            <input class="form__input" type="email" name="email" placeholder="Escriba su correo..." value="">
+          </div>
+          <div class="form">
+            <label for="phone">Teléfono</label>
+            <input class="form__input" type="number" name="phone" placeholder="Escriba su teléfono..." value="">
+          </div>
+          <div class="form__comment">
+            <textarea name="name" rows="8" cols="80" placeholder="Introduzca aquí su comentario..."></textarea>
+          </div>
+          <button type="submit" name="button" class="article__btn">Enviar<i class="fas fa-paper-plane"></i></button>
+        </form>
+      </article>
+      <!-- Contenido secundario -->
+      <aside class="main__aside">
+        <div class="aside__content">
+          <img src="../img/Fabiana-Sasalez.webp" alt="Foto Fabiana Sasalez">
+          <p class="aside__text">Fabiana Sasalez</p>
+          <p class="aside__text">sasalezfabiana@gmail.com</p>
+        </div>
+        <div class="aside__content">
+          <img src="../img/Matias-Teijeiro.webp" alt="Foto Matias Teijeiro">
+          <p class="aside__text">Matias Teijeiro</p>
+          <p class="aside__text">matiasteijeiro2003@gmail.com</p>
+        </div>
+      </aside>
     </section>
-    <input type="checkbox" value="" id="check">
-    <label for="check" class="checkbtn"></label>
-    <ul class="nav__ul">
-      <li class="nav__li"><a href="../index.html">Inicio</a></li>
-      <li class="nav__li"><a href="nosotros.html">Nosotros</a></li>
-      <li class="nav__li"><a href="contacto.html">Contacto</a></li>
-      <li class="nav__li"><a href="preguntas.html">Preguntas</a></li>
-      <li class="nav__li"><a href="extra.html">Extra</a></li>
-    </ul>
-  </nav>
-</header>
-<main class="main__contact">
-  <section class="section__main">
-    <article class="main__article">
-      <h1 class="main__title">Formulario de contacto</h1>
-      <form class="article__form" action="index.html" method="post">
-        <div class="form">
-          <label for="name">Nombre completo:</label>
-          <input class="form__input" type="text" name="name" placeholder="Escriba su nombre..." value="">
-        </div>
-        <div class="form">
-          <label for="email">Correo:</label>
-          <input class="form__input" type="email" name="email" placeholder="Escriba su correo..." value="">
-        </div>
-        <div class="form">
-          <label for="phone">Teléfono</label>
-          <input class="form__input" type="number" name="phone" placeholder="Escriba su teléfono..." value="">
-        </div>
-        <div class="form__comment">
-          <textarea name="name" rows="8" cols="80" placeholder="Introduzca aquí su comentario..."></textarea>
-        </div>
-        <button type="submit" name="button" class="article__btn">Enviar<i class="fas fa-paper-plane"></i></button>
-      </form>
-    </article>
-    <aside class="main__aside">
-      <div class="aside__content">
-        <img src="../img/Fabiana-Sasalez.jpg" alt="Foto">
-        <p class="aside__text">Fabiana Sasalez</p>
-        <p class="aside__text">sasalezfabiana@gmail.com</p>
-        <p class="aside__text">+598 099 517 794</p>
+  </main>
+  <!-- Footer - Redes - Mapa -->
+  <footer class="footer">
+    <div class="footer__redes" data-aos="fade-up">
+      <div class="redes__link">
+        <p>Redes sociales</p>
+        <ul class="redes__ul">
+          <li class="redes__item"><a href="#" title="facebook"><i class="fab fa-facebook-square" id="facebook"></i></a>
+          <li class="redes__item"><a href="#" title="google"><i class="fab fa-google" id="google"></i></a></li>
+          <li class="redes__item"><a href="#" title="instagram"><i class="fab fa-instagram" id="instagram"></i></a></li>
+          <li class="redes__item"><a href="#" title="twitter"><i class="fab fa-twitter" id="twitter"></i></a></li></li>
+        </ul>
+        <p>Estas terapias pueden cambiar tu estilo de vida, estamos convencidos de eso. Este proyecto surge para llevar este conocimiento a lugares donde no podría llegar, esto es solo el comienzo.</p>
       </div>
-      <div class="aside__content">
-        <img src="../img/Matias-Teijeiro.jpeg" alt="Foto">
-        <p class="aside__text">Matias Teijeiro</p>
-        <p class="aside__text">matiasteijeiro2003@gmail.com</p>
-        <p class="aside__text">+598 092 838 838</p>
+      <div class="footer__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27569.437544961318!2d-57.60265577124774!3d-30.260460896815633!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95acd70072014e37%3A0x959464a722929dc2!2zMzDCsDE1JzMxLjUiUyA1N8KwMzUnNTIuNCJX!5e0!3m2!1ses-419!2suy!4v1642041440562!5m2!1ses-419!2suy" width="400" height="300" title="Dirección donde realizamos los tratamientos"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
-    </aside>
-  </section>
-</main>
-<footer class="footer" >
-  <div class="footer__redes" data-aos="fade-up">
-    <div class="redes__link">
-      <p>Redes sociales</p>
-      <a href="#"><i class="fab fa-facebook-square" id="facebook"></i></a>
-      <a href="#"><i class="fab fa-google" id="google"></i></a>
-      <a href="#"><i class="fab fa-instagram" id="instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter" id="twitter"></i></a>
-      <p>Estas terapias pueden cambiar tu estilo de vida, estamos convencidos de eso. Este proyecto surge para llevar este conocimiento a lugares donde no podría llegar, esto es solo el comienzo.</p>
     </div>
-    <div class="footer__map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27569.437544961318!2d-57.60265577124774!3d-30.260460896815633!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95acd70072014e37%3A0x959464a722929dc2!2zMzDCsDE1JzMxLjUiUyA1N8KwMzUnNTIuNCJX!5e0!3m2!1ses-419!2suy!4v1642041440562!5m2!1ses-419!2suy" width="400" height="300"   style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="footer__extra">
+      <span class="extra__text">© 2022 Centro Ganesha, todos los derechos reservados.</span>
+      <span>Reglamento</span>
+      <span>Politica de privacidad</span>
+      <span>Acerca</span>
     </div>
-  </div>
-  <div class="footer__extra">
-    <span>© 2022 Centro Ganesha, todos los derechos reservados.</span>
-    <span>Reglamento</span>
-    <span>Politica de privacidad</span>
-    <span>Acerca</span>
-  </div>
-</footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  </footer>
 </body>
 </html>

@@ -8,15 +8,11 @@
     justify-content: center;
     gap: 30px;
     .main__title{
-      height: 50px;
-      width: 100%;
-      font-size: 25px;
-      display: flex;
+      @include sizes-behavior(50px, 100%, flex);
+      @include text(25px, $main-color, $fourth-font);
       justify-content: center;
       align-items: center;
       background: $thirteenth-color;
-      color: $main-color;
-      font-family: $fourth-font;
       &::before{
         content: '';
         display: block;
@@ -132,7 +128,22 @@
     }
   }
 }
+@media only screen and (min-width: 1200px){
 
+    .main__extra{
+      .article__container{
+        .main__title{
+          font-size: 35px;
+        }
+        .main__text{
+          font-size: 20px;
+        }
+        .card{
+          width: 25%;
+        }
+    }
+  }
+}
 @media only screen and (min-width: 1400px){
   .main__extra{
     .article__container{
@@ -152,7 +163,7 @@
   .main__extra{
     .article__container{
       .card{
-        width: 23%;
+        width: 20%;
       }
     }
   }

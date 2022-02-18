@@ -9,9 +9,7 @@
     top: 0;
     z-index: 10;
     .header__logo{
-      height: 100%;
-      width: 60px;
-      display: flex;
+      @include sizes-behavior(100%, 60px, flex);
       align-items: center;
       color: $fourth-color;
       margin-left: 10px;
@@ -23,23 +21,19 @@
       .Logo__text{
         margin-left: 15px;
         margin-bottom: 0px;
-        font-size: 22px;
-        font-family: $fifth-font;
+        @include text(22px, $main-color, $fifth-font);
         align-self: center;
         line-height: 23px;
-        color: $main-color;
       }
     }
     .checkbtn{
-      height: 50px;
-      width: 50px;
+      @include sizes-behavior(50px, 50px, flex);
       background: $fifth-color;
       color: $main-color;
       margin: 5px 20px;
       position: fixed;
       top:0;
       right: 0;
-      display: flex;
       justify-content: center;
       align-items: center;
       transition: .5s;
@@ -111,14 +105,12 @@
     }
   }
   .header__index{
-    height: 750px;
-    width: 100%;
+    @include sizes-behavior(750px, 100%, flex);
     margin-top: 60px;
     background-image: url("../img/header-back.webp");
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -136,39 +128,28 @@
       }
       .start__tittle{
         width: 100%;
-        font-size: 20px;
-        color: $main-color;
-        font-family: $second-font;
+        @include text(20px, $main-color, $second-font);
         letter-spacing: 2px;
       }
     }
     .start__text{
       width: 80%;
-      font-size: 16px;
+      @include text(16px, $seventh-color, $main-font);
       margin-right: 0px;
-      color: $seventh-color;
-      font-family: $main-font;
       font-weight: 600;
     }
   }
   .header__we{
+    @extend .header__index;
     height: 460px;
     width: calc(100% - 20px);
-    background-image: url("../img/header-back-ns.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("../img/header-back-ns.webp");
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 70px;
-    margin: 0px 10px;
+    flex-direction: row;
+    margin: 70px 10px 0px;
     border-radius: 10px;
     .header__title{
-      color: $main-color;
-      font-size: 2.5rem;
-      font-family: $fourth-font;
+      @include text(2.5rem, $main-color, $fourth-font);
       text-shadow: 0px 0px 14px $seventh-color;
       text-align: center;
     }
@@ -184,6 +165,9 @@
     }
     .header__index{
       background-position: right;
+    }
+    .header__we{
+      background-position: center;
     }
   }
 }
@@ -252,6 +236,10 @@
         font-weight: 600;
         margin: 20px 5% 0px 0px;
       }
+    }
+    .header__we{
+      width: calc(100% - 20px);
+      align-items: center;
     }
   }
 
@@ -361,6 +349,9 @@
         font-size: 20px;
         margin: 20px 5% 0px 0px;
       }
+    }
+    .header__we{
+      height: 650px;
     }
   }
 }

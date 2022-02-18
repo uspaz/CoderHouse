@@ -1,32 +1,45 @@
 .footer{
-  height: 780px;
-  width: 100%;
+  @include sizes-behavior(780px, 100%, grid);
   background: $third-color;
   margin-top: 20px;
-  display: grid;
   grid-template-columns: 100% 0%;
   grid-template-rows: 18.75em 15.625em 13.675em;
   font-family: $fourth-font;
   .footer__redes{
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    height: 250px;
-    width: 100%;
-    display: grid;
+    @include sizes-behavior(250px, 100%, grid);
     grid-template-rows: 18.75em 15.625em; /* 250/16 */
     grid-template-columns: 100% 0%;
     .redes__link{
       grid-row: 2 / 3;
-      width: 100%;
-      height: 90%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-content: space-around;
-      gap: 15px;
-      @each $name, $value in $redes{
-        ##{$name}{
-          color: $value;
+      @include sizes-behavior(100%, 100%, flex);
+      flex-direction: column;
+      justify-content: space-around;
+      .redes__ul{
+        list-style: none;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: space-around;
+        padding: 0;
+        @each $name, $value in $redes{
+          ##{$name}{
+            color: $value;
+          }
+        }
+        .redes__item{
+          a{
+            width: 6.25em;
+            text-decoration: none;
+            i{
+              font-size: 30px;
+              transition: .5s;
+              &:hover{
+                transform: translateY(-10px);
+              }
+            }
+          }
         }
       }
       p:nth-child(1){
@@ -35,21 +48,8 @@
         font-size: 25px;
         color: $main-color;
       }
-      a{
-        width: 6.25em; /* 100/16 */
-        text-decoration: none;
-        transition: .5s;
-        &:hover{
-          transform: translateY(-10px);
-        }
-        i{
-          font-size: 30px;
-          color: $main-color;
-          display: flex;
-          justify-content: space-around;
-        }
-      }
-      p:nth-child(6){
+
+      p:nth-child(3){
         font-size: 14px;
         color: $main-color;
         text-align: center;
@@ -57,9 +57,7 @@
       }
     }
     .footer__map{
-      height: 225px;
-      width: 90%;
-      display: flex;
+      @include sizes-behavior(225px, 90%, flex);
       justify-content: center;
       margin: 5% 5%;
       iframe{
@@ -69,12 +67,10 @@
     }
   }
   .footer__extra{
-    height: 100%;
-    width: 100%;
+    @include sizes-behavior(100%, 100%, flex);
     grid-row: 3 / 4;
     grid-column: 1 / 2;
     color: $main-color;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
@@ -102,7 +98,7 @@
         p:nth-child(1){
           font-size: 30px;
         }
-        p:nth-child(6){
+        p:nth-child(3){
           font-size: 18px;
         }
       }
@@ -133,15 +129,14 @@
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         width: 100%;
-        height: 100%;
+        height: 90%;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
+        flex-direction: column;
+        justify-content: space-around;
         p:nth-child(1){
-          font-size: 25px;
+          font-size: 30px;
         }
-        p:nth-child(6){
+        p:nth-child(3){
           font-size: 16px;
         }
       }
@@ -163,6 +158,21 @@
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px){
+  .footer{
+    .footer__redes{
+      .redes__link{
+        p:nth-child(1){
+          font-size: 35px;
+        }
+        p:nth-child(3){
+          font-size: 18px;
+        }
+      }
     }
   }
 }

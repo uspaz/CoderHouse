@@ -1,4 +1,4 @@
-@charset "UTF-8";
+// Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 // Reset Manual
 *{
@@ -50,10 +50,17 @@ $redes:(
 );
 
 // Mixins
-// @mixin pensando{
-//
-// }
+@mixin sizes-behavior($height, $width, $display){
+  height: $height;
+  width: $width;
+  display: $display;
+}
 
+@mixin text($font-size, $text-color, $font-family){
+  font-size: $font-size;
+  color: $text-color;
+  font-family: $font-family;
+}
 // Scroll
 body{
   &::-webkit-scrollbar{
