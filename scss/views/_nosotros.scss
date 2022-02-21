@@ -1,8 +1,8 @@
-.main__we{
+.main__we{ /* Estructura para la página secundaria */
   height: auto;
   width: 100%;
   overflow: hidden;
-  .main__section{
+  .main__section{ /* Estructura y detalles para la sección del contenido*/
     @include sizes-behavior(auto, 100%, flex);
     flex-direction: column;
     margin-bottom: 15px;

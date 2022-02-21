@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 * {
   margin: 0px;
@@ -12,9 +13,11 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px; }
 
 .header {
+  /* Estructura del Header */
   height: auto;
   width: 100%; }
   .header .header__nav {
+    /* Estructura del Nav y el Logo*/
     height: 60px;
     width: 100%;
     background: #0a0908;
@@ -107,6 +110,7 @@ body::-webkit-scrollbar-thumb {
         .header .header__nav .nav__ul .nav__li a:hover {
           background: #2286e6; }
   .header .header__index, .header .header__we {
+    /* Estructura para la sección del header en la página principal */
     height: 750px;
     width: 100%;
     display: flex;
@@ -143,6 +147,7 @@ body::-webkit-scrollbar-thumb {
       margin-right: 0px;
       font-weight: 600; }
   .header .header__we {
+    /* Estructura para la sección del header en la página secundaria */
     height: 460px;
     width: calc(100% - 20px);
     background-image: url("../img/header-back-ns.webp");
@@ -286,10 +291,12 @@ body::-webkit-scrollbar-thumb {
     height: 650px; } }
 
 .main__index {
+  /* Estructura de la página principal*/
   height: auto;
   width: 100%;
   overflow: hidden; }
   .main__index .main_article {
+    /* Detalles para sección del contenido principal*/
     height: auto;
     width: 100%;
     background-image: radial-gradient(circle 900px at 50.1% 48%, #32393f 0.2%, #212529 90%); }
@@ -303,6 +310,7 @@ body::-webkit-scrollbar-thumb {
     .main__index .main_article .lead {
       color: #FFFFFF; }
   .main__index .main__card {
+    /* Estructura para el contenido secundario de la página principal*/
     height: auto;
     width: 100%;
     display: flex;
@@ -393,10 +401,12 @@ body::-webkit-scrollbar-thumb {
         padding: 0px 10px; } }
 
 .main__we {
+  /* Estructura para la página secundaria */
   height: auto;
   width: 100%;
   overflow: hidden; }
   .main__we .main__section {
+    /* Estructura y detalles para la sección del contenido*/
     height: auto;
     width: 100%;
     display: flex;
@@ -489,10 +499,12 @@ body::-webkit-scrollbar-thumb {
     font-size: 20px; } }
 
 .main__contact {
+  /* Estructura de la tercera página */
   height: auto;
   width: 100%;
   margin-top: 100px; }
   .main__contact .section__main {
+    /* Estrutura para el contenido de la página de contacto*/
     height: auto;
     width: 100%;
     display: grid;
@@ -500,6 +512,7 @@ body::-webkit-scrollbar-thumb {
     grid-template-rows: auto;
     grid-gap: 20px; }
     .main__contact .section__main .main__article {
+      /* Estructura y detalles del formulario de contacto*/
       grid-column: 1 / 2;
       grid-row: 1 / 3;
       height: 800px;
@@ -579,6 +592,7 @@ body::-webkit-scrollbar-thumb {
           .main__contact .section__main .main__article .article__form .article__btn i {
             padding-left: 5px; }
     .main__contact .section__main .main__aside {
+      /* Estructura y detalles para la sección con las personas a quien contactar*/
       grid-column: 1 / 2;
       grid-row: 3 / 4;
       height: 700px;
@@ -696,10 +710,12 @@ body::-webkit-scrollbar-thumb {
         font-size: 19px; } }
 
 .main__questions {
+  /* Estructura para la página de preguntas frecuentes*/
   height: auto;
   width: 100%;
   margin-top: 100px; }
   .main__questions .main__container {
+    /* Estructura para armar el contenido*/
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
@@ -707,6 +723,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     grid-gap: 20px; }
     .main__questions .main__container .article__container {
+      /* Estructura y complementos para la sección de las preguntas*/
       grid-column: 1 / 2;
       grid-row: 1 / 3;
       display: grid;
@@ -739,6 +756,7 @@ body::-webkit-scrollbar-thumb {
           .main__questions .main__container .article__container .accordion .accordion-item .accordion-header .accordion-button {
             height: 62px; }
     .main__questions .main__container .aside__container {
+      /* Estruturas y detalles para la sección de agradecimientos */
       height: auto;
       width: 100%;
       display: flex;
@@ -801,10 +819,12 @@ body::-webkit-scrollbar-thumb {
       width: 30%; } }
 
 .main__extra {
+  /* Estructura para la página con información sobre libros*/
   height: auto;
   width: 100%;
   margin-top: 100px; }
   .main__extra .article__container {
+    /* Estructura para organizar las cards*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -916,6 +936,7 @@ body::-webkit-scrollbar-thumb {
     width: 20%; } }
 
 .footer {
+  /* Estructura del footer */
   height: 780px;
   width: 100%;
   display: grid;
@@ -925,13 +946,13 @@ body::-webkit-scrollbar-thumb {
   grid-template-rows: 18.75em 15.625em 13.675em;
   font-family: "Roboto Mono", monospace; }
   .footer .footer__redes {
+    /* Sección de Redes Sociales*/
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     height: 250px;
     width: 100%;
     display: grid;
     grid-template-rows: 18.75em 15.625em;
-    /* 250/16 */
     grid-template-columns: 100% 0%; }
     .footer .footer__redes .redes__link {
       grid-row: 2 / 3;
@@ -974,6 +995,7 @@ body::-webkit-scrollbar-thumb {
         text-align: center;
         padding: 0px 20px; }
     .footer .footer__redes .footer__map {
+      /* Codigo del mapa de google maps */
       height: 225px;
       width: 90%;
       display: flex;
@@ -983,6 +1005,7 @@ body::-webkit-scrollbar-thumb {
         height: 100%;
         width: 100%; }
   .footer .footer__extra {
+    /* Sección extra con las politicas y "patente" de la página */
     height: 100%;
     width: 100%;
     display: flex;

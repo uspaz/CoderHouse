@@ -1,8 +1,8 @@
-.main__extra{
+.main__extra{ /* Estructura para la página con información sobre libros*/
   height: auto;
   width: 100%;
   margin-top: 100px;
-  .article__container{
+  .article__container{ /* Estructura para organizar las cards*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

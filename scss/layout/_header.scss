@@ -1,7 +1,7 @@
-.header{
+.header{ /* Estructura del Header */
   height: auto;
   width: 100%;
-  .header__nav{
+  .header__nav{ /* Estructura del Nav y el Logo*/
     height: 60px;
     width: 100%;
     background: $third-color;
@@ -104,7 +104,7 @@
       }
     }
   }
-  .header__index{
+  .header__index{ /* Estructura para la sección del header en la página principal */
     @include sizes-behavior(750px, 100%, flex);
     margin-top: 60px;
     background-image: url("../img/header-back.webp");
@@ -139,7 +139,7 @@
       font-weight: 600;
     }
   }
-  .header__we{
+  .header__we{ /* Estructura para la sección del header en la página secundaria */
     @extend .header__index;
     height: 460px;
     width: calc(100% - 20px);

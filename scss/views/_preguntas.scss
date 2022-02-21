@@ -1,15 +1,15 @@
-.main__questions{
+.main__questions{ /* Estructura para la página de preguntas frecuentes*/
   height: auto;
   width: 100%;
   margin-top: 100px;
-  .main__container{
+  .main__container{ /* Estructura para armar el contenido*/
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 70px repeat(2, auto);
     justify-content: center;
     grid-gap: 20px;
-    .article__container{
+    .article__container{ /* Estructura y complementos para la sección de las preguntas*/
       grid-column: 1 / 2;
       grid-row: 1 / 3;
       display: grid;
@@ -49,7 +49,7 @@
         }
       }
     }
-    .aside__container{
+    .aside__container{ /* Estruturas y detalles para la sección de agradecimientos */
       @include sizes-behavior(auto, 100%, flex);
       background: $nineteenth-color;
       flex-wrap: wrap;
