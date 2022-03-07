@@ -18,6 +18,10 @@
     }
     .first{
       .container-fluid{
+        .container__text{
+          font-size: 18px;
+          padding: 0px;
+        }
         .video{
             width: 100%;
             height: 300px;
@@ -84,6 +88,10 @@
         width: 95%;
         margin: 0px auto;
         .container-fluid{
+          .container__text{
+            font-size: 20px;
+            padding: 15px 15px 0px;
+          }
           .video{
             height: 35em;
           }
@@ -103,6 +111,9 @@
         width: 80%;
         margin: 0px auto;
         .container-fluid{
+          .container__text{
+            font-size: 22px;
+          }
           .video{
             height: 31em;
           }
