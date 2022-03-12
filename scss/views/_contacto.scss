@@ -32,7 +32,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        background: $eleventh-color;
+        background: $thirteenth-color;
         .form {
           label{
             display: none;
@@ -45,7 +45,7 @@
             background: transparent;
             font-size: 16px;
             &::placeholder{
-              @include text(16px, $third-color, $main-font);
+              @include text(16px, $seventh-color, $main-font);
             }
             &:focus{
               outline: none;
@@ -68,7 +68,7 @@
               font-family: $main-font;
             }
             &::placeholder{
-              @include text(16px, $third-color, $main-font);
+              @include text(16px, $seventh-color, $main-font);
               padding-left: 5px;
             }
           }
@@ -92,7 +92,7 @@
       grid-column: 1 / 2;
       grid-row: 3 / 4;
       @include sizes-behavior(700px, 100%, flex);
-      background: $twelfth-color;
+      background: $fourteenth-color ;
       flex-wrap: wrap;
       align-content: center;
       justify-content: center;
@@ -109,7 +109,7 @@
           margin-bottom: 10px;
         }
         .aside__text{
-          color: $main-color;
+          color: $seventh-font;
           font-family: $third-font;
           line-height: 25px;
         }

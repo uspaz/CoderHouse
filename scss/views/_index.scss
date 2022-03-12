@@ -28,10 +28,10 @@
     margin: 30px 0px;
     .tarjeta{
       @include sizes-behavior(450px, 100%, flex);
-      background: $fourteenth-color;
+      background: $main-bg;
       align-items: center;
       flex-direction: column;
-      font-family: $fourth-font;
+      font-family: $seventh-font;
       text-align: center;
       &:hover{
         transform: scale(1.05);
@@ -51,11 +51,11 @@
       .card__title{
         margin-top: 15px;
         text-align: center;
-        font-size: 20px;
-        color: $fifteenth-color;
+        font-size: 25px;
+        color: $thirteenth-color;
       }
       .card__text{
-        color: $sixteenth-color;
+        color: $main-color;
         font-size: 16px;
         margin-top: 15px;
         padding: 0px 10px 0px 10px;
@@ -140,7 +140,7 @@
       gap: 10px;
       .tarjeta{
         width: 22%;
-        height: 525px;
+        height: calc(auto + 30px);
         .card__title{
           padding: 0px 10px;
         }

@@ -1,5 +1,6 @@
 // Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 // Reset Manual
 *{
   margin: 0px;
@@ -10,24 +11,19 @@
 
 // Colors
 $main-color: #faf9f9;
-$second-color: #0a9396;
+$second-color: #dee2e6;
 $third-color: #0a0908;
 $fourth-color: #FFFFFF;
-$fifth-color: #37a6ff;
+$fifth-color: #264653;
 $sixth-color: #2c3e50;
 $seventh-color: #000000;
 $eighth-color: #2286e6;
 $ninth-color: #48cae4;
 $tenth-color: #011627;
-$eleventh-color: #2EC4B6;
-$twelfth-color: #E71D36;
-$thirteenth-color: #3c096c;
-$fourteenth-color: #dee2e6;
-$fifteenth-color: #023e8a;
-$sixteenth-color: #0096c7;
-$seventeenth-color: #212529;
-$eighteenth-color: #00a896;
-$nineteenth-color: #264653;
+$eleventh-color: #212529;
+$twelfth-color: #3c096c;
+$thirteenth-color: #ffc8aa;
+$fourteenth-color: #00a896;
 
 // Fonts
 $main-font: 'Raleway', sans-serif;
@@ -36,6 +32,7 @@ $third-font: 'Be Vietnam Pro', sans-serif;
 $fourth-font: 'Roboto Mono', monospace;
 $fifth-font: 'Times New Roman';
 $sixth-font: 'Libre Baskerville', serif;
+$seventh-font: 'Nunito', sans-serif;
 
 // Background Gradients
 $main-bg: radial-gradient( circle 900px at 50.1% 48%,  rgba(50,57,63,1) 0.2%, rgba(33,37,41,1) 90% );
@@ -44,7 +41,7 @@ $second-bg: radial-gradient( circle 937px at 49.3% 48.5%,  rgba(5,120,193,1) 0%,
 // Map redes
 $redes:(
   facebook: #4267b2,
-  google: #ee4b39,
+  whatsapp: #20d466,
   instagram: #e4405f,
   twitter: #1da1f2
 );

@@ -22,16 +22,16 @@
           font-size: 18px;
           padding: 0px;
         }
-        .video{
-            width: 100%;
-            height: 300px;
-        }
       }
     }
     .row{
       .col-md-6{
         margin: 15px 0px;
         .h-100{
+          .text{
+            font-family: $seventh-font;
+            margin: 50px 0px 0px;
+          }
           img{
             @include sizes-behavior(200px, 200px, block);
             border-radius: 50%;
@@ -56,22 +56,17 @@
       .first{
         width: 90%;
         margin: 0px auto;
-        .container-fluid{
-          .video{
-            height: 25em;
-          }
-        }
       }
       .row{
         .col-md-6{
           .bg--d{
-            background: $seventeenth-color !important;
+            background: $eleventh-color !important;
             color: $fourth-color;
           }
           .bg--l{
             background: $main-color !important;
             color: $seventh-color !important;
-            border: 1px solid $fourteenth-color!important
+            border: 1px solid $second-color!important
           }
         }
       }
@@ -92,9 +87,6 @@
             font-size: 20px;
             padding: 15px 15px 0px;
           }
-          .video{
-            height: 35em;
-          }
         }
       }
     }
@@ -114,9 +106,6 @@
           .container__text{
             font-size: 22px;
           }
-          .video{
-            height: 31em;
-          }
         }
       }
     }
@@ -131,24 +120,20 @@
       .first{
         width: 70%;
         margin: 0px auto;
-        .container-fluid{
-          .video{
-            height: 33em;
-          }
         }
-      }
-      .row{
-        .col-md-6{
-          .h-100{
-            .text{
-              font-size: 18px;
-            }
+    }
+    .row{
+      .col-md-6{
+        .h-100{
+          .text{
+            font-size: 18px;
           }
         }
       }
     }
   }
 }
+
 @media only screen and (min-width: 1650px){
   .main__we{
     .main__section{
@@ -158,11 +143,6 @@
       .first{
         width: 70%;
         margin: 0px auto;
-        .container-fluid{
-          .video{
-            height: 40em;
-          }
-        }
       }
       .row{
         .col-md-6{

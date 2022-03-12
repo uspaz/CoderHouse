@@ -22,7 +22,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: $eighteenth-color;
+        background: $fourteenth-color;
         text-shadow: 2px 2px 10px rgba(0, 0, 0, .60);
         color: $main-color;
         font-size: 28px;
@@ -60,7 +60,7 @@
     }
     .aside__container{ /* Estruturas y detalles para la sección de agradecimientos */
       @include sizes-behavior(auto, 100%, flex);
-      background: $nineteenth-color;
+      background: $fifth-color;
       flex-wrap: wrap;
       align-content: center;
       justify-content: space-around;
@@ -69,10 +69,14 @@
       .aside__item{
         @include sizes-behavior(auto, 100%, flex);
         background: $main-color;
+        color: $seventh-color;
         padding: 20px;
         align-items: center;
         font-family: $second-font;
         font-size: 18px;
+        p{
+          margin: 0px;
+        }
       }
     }
   }
@@ -87,7 +91,7 @@
           font-size: 32px;
         }
         .accordion{
-          height: 850px;
+          height: 800px;
         }
       }
     }
@@ -99,7 +103,7 @@
     .main__container{
       .article__container{
         .accordion{
-          height: 750px;
+          height: 700px;
         }
       }
       .aside__container{

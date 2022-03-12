@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -47,7 +48,7 @@ body::-webkit-scrollbar-thumb {
       height: 50px;
       width: 50px;
       display: flex;
-      background: #37a6ff;
+      background: #00a896;
       color: #faf9f9;
       margin: 5px 20px;
       position: fixed;
@@ -233,8 +234,13 @@ body::-webkit-scrollbar-thumb {
       font-size: 18px; }
   .header .header__index, .header .header__we {
     height: 550px; }
-  .header .header__we .header__title {
-    font-size: 2.8rem; } }
+  .header .header__we {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0px;
+    margin: 60px 0; }
+    .header .header__we .header__title {
+      font-size: 2.8rem; } }
 
 @media only screen and (min-width: 1200px) {
   .header .header__index, .header .header__we {
@@ -324,10 +330,10 @@ body::-webkit-scrollbar-thumb {
       height: 450px;
       width: 100%;
       display: flex;
-      background: #dee2e6;
+      background: radial-gradient(circle 900px at 50.1% 48%, #32393f 0.2%, #212529 90%);
       align-items: center;
       flex-direction: column;
-      font-family: "Roboto Mono", monospace;
+      font-family: "Nunito", sans-serif;
       text-align: center; }
       .main__index .main__card .tarjeta:hover {
         transform: scale(1.05); }
@@ -346,10 +352,10 @@ body::-webkit-scrollbar-thumb {
       .main__index .main__card .tarjeta .card__title {
         margin-top: 15px;
         text-align: center;
-        font-size: 20px;
-        color: #023e8a; }
+        font-size: 25px;
+        color: #ffc8aa; }
       .main__index .main__card .tarjeta .card__text {
-        color: #0096c7;
+        color: #faf9f9;
         font-size: 16px;
         margin-top: 15px;
         padding: 0px 10px 0px 10px; }
@@ -396,7 +402,7 @@ body::-webkit-scrollbar-thumb {
     gap: 10px; }
     .main__index .main__card .tarjeta {
       width: 22%;
-      height: 525px; }
+      height: calc(auto + 30px); }
       .main__index .main__card .tarjeta .card__title {
         padding: 0px 10px; } }
 
@@ -428,11 +434,11 @@ body::-webkit-scrollbar-thumb {
     .main__we .main__section .first .container-fluid .container__text {
       font-size: 18px;
       padding: 0px; }
-    .main__we .main__section .first .container-fluid .video {
-      width: 100%;
-      height: 300px; }
     .main__we .main__section .row .col-md-6 {
       margin: 15px 0px; }
+      .main__we .main__section .row .col-md-6 .h-100 .text {
+        font-family: "Nunito", sans-serif;
+        margin: 50px 0px 0px; }
       .main__we .main__section .row .col-md-6 .h-100 img {
         height: 200px;
         width: 200px;
@@ -450,8 +456,6 @@ body::-webkit-scrollbar-thumb {
   .main__we .main__section .first {
     width: 90%;
     margin: 0px auto; }
-    .main__we .main__section .first .container-fluid .video {
-      height: 25em; }
   .main__we .main__section .row .col-md-6 .bg--d {
     background: #212529 !important;
     color: #FFFFFF; }
@@ -469,9 +473,7 @@ body::-webkit-scrollbar-thumb {
       margin: 0px auto; }
       .main__we .main__section .first .container-fluid .container__text {
         font-size: 20px;
-        padding: 15px 15px 0px; }
-      .main__we .main__section .first .container-fluid .video {
-        height: 35em; } }
+        padding: 15px 15px 0px; } }
 
 @media only screen and (min-width: 1200px) {
   .main__we .main__section .section__title {
@@ -480,9 +482,7 @@ body::-webkit-scrollbar-thumb {
     width: 80%;
     margin: 0px auto; }
     .main__we .main__section .first .container-fluid .container__text {
-      font-size: 22px; }
-    .main__we .main__section .first .container-fluid .video {
-      height: 31em; } }
+      font-size: 22px; } }
 
 @media only screen and (min-width: 1400px) {
   .main__we .main__section .section__title {
@@ -490,9 +490,7 @@ body::-webkit-scrollbar-thumb {
   .main__we .main__section .first {
     width: 70%;
     margin: 0px auto; }
-    .main__we .main__section .first .container-fluid .video {
-      height: 33em; }
-  .main__we .main__section .row .col-md-6 .h-100 .text {
+  .main__we .row .col-md-6 .h-100 .text {
     font-size: 18px; } }
 
 @media only screen and (min-width: 1650px) {
@@ -501,8 +499,6 @@ body::-webkit-scrollbar-thumb {
   .main__we .main__section .first {
     width: 70%;
     margin: 0px auto; }
-    .main__we .main__section .first .container-fluid .video {
-      height: 40em; }
   .main__we .main__section .row .col-md-6 .h-100 .text {
     font-size: 20px; } }
 
@@ -550,7 +546,7 @@ body::-webkit-scrollbar-thumb {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        background: #2EC4B6; }
+        background: #ffc8aa; }
         .main__contact .section__main .main__article .article__form .form label {
           display: none; }
         .main__contact .section__main .main__article .article__form .form .form__input {
@@ -562,7 +558,7 @@ body::-webkit-scrollbar-thumb {
           font-size: 16px; }
           .main__contact .section__main .main__article .article__form .form .form__input::placeholder {
             font-size: 16px;
-            color: #0a0908;
+            color: #000000;
             font-family: "Raleway", sans-serif; }
           .main__contact .section__main .main__article .article__form .form .form__input:focus {
             outline: none;
@@ -581,7 +577,7 @@ body::-webkit-scrollbar-thumb {
             font-family: "Raleway", sans-serif; }
           .main__contact .section__main .main__article .article__form .form__comment textarea::placeholder {
             font-size: 16px;
-            color: #0a0908;
+            color: #000000;
             font-family: "Raleway", sans-serif;
             padding-left: 5px; }
         .main__contact .section__main .main__article .article__form .article__btn {
@@ -606,7 +602,7 @@ body::-webkit-scrollbar-thumb {
       height: 700px;
       width: 100%;
       display: flex;
-      background: #E71D36;
+      background: #00a896;
       flex-wrap: wrap;
       align-content: center;
       justify-content: center;
@@ -622,7 +618,7 @@ body::-webkit-scrollbar-thumb {
           border-radius: 100%;
           margin-bottom: 10px; }
         .main__contact .section__main .main__aside .aside__content .aside__text {
-          color: #faf9f9;
+          color: "Nunito", sans-serif;
           font-family: "Be Vietnam Pro", sans-serif;
           line-height: 25px; }
 
@@ -781,20 +777,23 @@ body::-webkit-scrollbar-thumb {
         width: 100%;
         display: flex;
         background: #faf9f9;
+        color: #000000;
         padding: 20px;
         align-items: center;
         font-family: "Luxurious Roman", cursive;
         font-size: 18px; }
+        .main__questions .main__container .aside__container .aside__item p {
+          margin: 0px; }
 
 @media only screen and (min-width: 480px) {
   .main__questions .main__container .article__container .main__title {
     font-size: 32px; }
   .main__questions .main__container .article__container .accordion {
-    height: 850px; } }
+    height: 800px; } }
 
 @media only screen and (min-width: 600px) {
   .main__questions .main__container .article__container .accordion {
-    height: 750px; }
+    height: 700px; }
   .main__questions .main__container .aside__container {
     padding: 30px 0px; }
     .main__questions .main__container .aside__container .aside__item {
@@ -986,8 +985,8 @@ body::-webkit-scrollbar-thumb {
         padding: 0; }
         .footer .footer__redes .redes__link .redes__ul #facebook {
           color: #4267b2; }
-        .footer .footer__redes .redes__link .redes__ul #google {
-          color: #ee4b39; }
+        .footer .footer__redes .redes__link .redes__ul #whatsapp {
+          color: #20d466; }
         .footer .footer__redes .redes__link .redes__ul #instagram {
           color: #e4405f; }
         .footer .footer__redes .redes__link .redes__ul #twitter {

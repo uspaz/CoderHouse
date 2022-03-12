@@ -12,7 +12,7 @@
       @include text(25px, $main-color, $fourth-font);
       justify-content: center;
       align-items: center;
-      background: $thirteenth-color;
+      background: $twelfth-color;
       &::before{
         content: '';
         display: block;
@@ -113,10 +113,10 @@
           position: absolute;
           right: 0;
           width: 200px;
-          border-top: 35px solid $thirteenth-color;
-          border-left: 35px solid $thirteenth-color;
-          border-right: 35px solid $thirteenth-color;
-          border-bottom: 35px solid $thirteenth-color;
+          border-top: 35px solid $twelfth-color;
+          border-left: 35px solid $twelfth-color;
+          border-right: 35px solid $twelfth-color;
+          border-bottom: 35px solid $twelfth-color;
         }
       }
       .main__text{
